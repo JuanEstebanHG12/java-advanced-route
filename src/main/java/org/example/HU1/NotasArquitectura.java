@@ -46,7 +46,4 @@ public class NotasArquitectura {
      * - Mejor rendimiento y escalabilidad.
      */
 
-    public static void main(String[] args) {
-        System.out.println("Clase de notas de arquitectura Java 8 vs 17/21");
-    }
 }
