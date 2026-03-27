@@ -33,6 +33,34 @@ public class Empleado {
         this.nombre = nombre;
     }
 
+    /*
+     * Método que calcula el salario final aplicando reglas de negocio.
+     * Orden de ejecución:
+     * 1. Paréntesis internos
+     *    - (bonoMensual * 1.10)
+     *    - (salarioBase * 0.05)
+     * 2. Suma:
+     *    - salarioBase + resultado del bono incrementado
+     * 3. Resta:
+     *    - resultado anterior - descuento
+     */
+    public double calcularSalarioFinal() {
+        if (tieneBonoExtra()){
+            return (salarioLong + (bonusFloat * 1.12)) - (salarioLong * 0.05);
+        }
+        return (salarioLong + (bonusFloat * 1.10)) - (salarioLong * 0.05);
+    }
+
+
+    /*
+     * Determina si el empleado tiene un bono extra usando operador módulo (%)
+     * Si el ID es par, obtiene beneficio adicional
+     */
+    public boolean tieneBonoExtra() {
+        return (idInt % 2 == 0);
+    }
+
+
     // Getters with classes(muy verbosos)
     public String getNombre() { return nombre; }
     public int getIdInt() { return idInt; }
