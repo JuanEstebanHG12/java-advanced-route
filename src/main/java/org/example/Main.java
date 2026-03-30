@@ -33,7 +33,5 @@ public class Main {
         System.out.println("SALARIO FINAL (Si aplica el el bono extra se le agregara un 2% al bono) ");
         System.out.println(" ---------> " + emp.calcularSalarioFinal());
         System.out.println(" ---------> " + emp2.calcularSalarioFinal());
-
-
     }
 }
