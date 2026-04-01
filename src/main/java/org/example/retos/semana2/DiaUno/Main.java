@@ -1,7 +1,5 @@
-package org.example.retos.semana2;
+package org.example.retos.semana2.DiaUno;
 
-
-import org.example.retos.semana2.DiaUno.Switch;
 
 import java.util.Scanner;
 
